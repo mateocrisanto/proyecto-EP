@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: Título único y meta descripción — Cluster: Abastecimiento -->
+  <title>OneDeal | Proveedores para Tiendas en Quito — Un Solo Pedido, Una Sola Entrega</title>
+  <meta name="description" content="OneDeal centraliza tus compras a mayoristas de abarrotes en Quito. Un solo pedido, múltiples proveedores, una sola factura. Abastece tu tienda sin complicaciones. ¡Regístrate gratis!" />
+  <meta name="keywords" content="proveedores para tiendas Quito, mayoristas abarrotes Ecuador, distribuidores consumo masivo, plataforma B2B tiendas barrio, abastecimiento minimarket Quito" />
+
+  <!-- Open Graph (redes sociales) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://onedeal-quito.github.io/index.html" />
+  <meta property="og:title"       content="OneDeal | Proveedores para Tiendas en Quito" />
+  <meta property="og:description" content="Un solo pedido, múltiples proveedores, una sola entrega y factura. La plataforma B2B pensada para el tendero de Quito." />
+  <meta property="og:image"       content="https://onedeal-quito.github.io/img/og-cover.png" />
+
+  <!-- Schema.org structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "OneDeal",
+    "description": "Plataforma B2B de micro-abastecimiento urbano para tiendas de barrio en Quito, Ecuador.",
+    "url": "https://onedeal-quito.github.io",
+    "areaServed": { "@type": "City", "name": "Quito" },
+    "serviceType": "Distribución y logística de abarrotes B2B"
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23F97316'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='18' font-weight='900'>1D</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="container">
+      <div class="navbar__inner">
+
+        <!-- Logo -->
+        <a href="index.html" class="navbar__logo" aria-label="OneDeal — ir al inicio">
+          <div class="logo-mark" aria-hidden="true">1D</div>
+          <span class="logo-text">One<span>Deal</span></span>
+        </a>
+
+        <!-- Desktop links -->
+        <div class="navbar__links" role="navigation">
+          <a href="index.html" class="active">Inicio</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="pedido.html">Tu Pedido</a>
+          <a href="aliados.html">Programa Aliados</a>
+        </div>
+
+        <!-- Desktop CTA -->
+        <div style="display:none" class="navbar__links">
+        </div>
+        <a href="https://wa.me/593999999999?text=Hola%2C+quiero+info+de+OneDeal" target="_blank" rel="noopener" class="btn btn--whatsapp" style="display:none" id="navCtaDesktop">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+
+        <!-- Mobile hamburger -->
+        <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="navbar__mobile" id="mobileMenu" role="navigation" aria-label="Menú móvil">
+      <a href="index.html" class="active">🏠 Inicio</a>
+      <a href="catalogo.html">🛒 Catálogo</a>
+      <a href="pedido.html">📦 Tu Pedido</a>
+      <a href="aliados.html">⭐ Programa Aliados</a>
+      <a href="https://wa.me/593999999999?text=Hola%2C+quiero+info+de+OneDeal" target="_blank" rel="noopener" style="color:#25D366">
+        💬 Escríbenos por WhatsApp
+      </a>
+    </div>
+  </nav>
+
+  <!-- ===================== FUNNEL BANNER ===================== -->
+  <div class="funnel-banner" aria-label="Etapas del proceso OneDeal" role="navigation">
+    <div class="funnel-banner__inner container">
+      <div class="funnel-banner__step active">
+        <a href="index.html" aria-label="Etapa 1: Descubrimiento"></a>
+        <span class="step-num">1</span>
+        Descubrimiento
+      </div>
+      <div class="funnel-banner__step">
+        <a href="catalogo.html" aria-label="Etapa 2: Exploración del catálogo"></a>
+        <span class="step-num">2</span>
+        Exploración
+      </div>
+      <div class="funnel-banner__step">
+        <a href="pedido.html" aria-label="Etapa 3: Pedido y entrega"></a>
+        <span class="step-num">3</span>
+        Tu Pedido
+      </div>
+      <div class="funnel-banner__step">
+        <a href="aliados.html" aria-label="Etapa 4: Programa de lealtad"></a>
+        <span class="step-num">4</span>
+        Lealtad
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero" id="inicio">
+    <div class="container">
+      <div class="hero__inner">
+
+        <!-- Copy -->
+        <div class="hero__copy">
+          <div class="hero__badge" aria-label="Disponible solo en Quito">
+            📍 Solo en Quito, Ecuador
+          </div>
+
+          <h1 class="hero__title">
+            Deja de perder el tiempo<br/>
+            atendiendo a <span class="highlight">10 camiones</span>.<br/>
+            Todo tu inventario en<br/>
+            <span class="highlight">1 sola entrega.</span>
+          </h1>
+
+          <p class="hero__desc">
+            OneDeal consolida tus pedidos a todos tus proveedores de abarrotes —
+            Nestlé, Unilever, Quifatex y más — en un único furgón, una sola factura
+            y un solo día de entrega a la semana.
+          </p>
+
+          <div class="hero__ctas">
+            <a href="catalogo.html" class="btn btn--primary btn--lg">
+              Ver catálogo de productos →
+            </a>
+            <a href="https://wa.me/593999999999?text=Quiero+conocer+OneDeal" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+              Hablar con un asesor
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="hero__stats">
+            <div>
+              <div class="hero__stat-value">+40</div>
+              <div class="hero__stat-label">Marcas disponibles</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">1</div>
+              <div class="hero__stat-label">Entrega semanal</div>
+            </div>
+            <div>
+              <div class="hero__stat-value">3 hrs</div>
+              <div class="hero__stat-label">Que recuperas por semana</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual / Mock order card -->
+        <div class="hero__visual" aria-label="Ejemplo de pedido OneDeal consolidado">
+          <div class="hero-card">
+            <div class="hero-card__header">
+              <span class="hero-card__title">Pedido #2847 — Tu Tienda</span>
+              <span class="hero-card__badge">✓ En camino</span>
+            </div>
+            <div class="supplier-row">
+              <span class="supplier-name">🥫 Nestlé Ecuador</span>
+              <span class="supplier-check">✓</span>
+            </div>
+            <div class="supplier-row">
+              <span class="supplier-name">🧴 Unilever Andina</span>
+              <span class="supplier-check">✓</span>
+            </div>
+            <div class="supplier-row">
+              <span class="supplier-name">🍺 Cervecería Nacional</span>
+              <span class="supplier-check">✓</span>
+            </div>
+            <div class="supplier-row">
+              <span class="supplier-name">🛒 Quifatex</span>
+              <span class="supplier-check">✓</span>
+            </div>
+            <div class="supplier-row">
+              <span class="supplier-name">☕ Café Minerva</span>
+              <span class="supplier-check">✓</span>
+            </div>
+          </div>
+          <div class="hero-summary">
+            <div>
+              <div class="hero-summary__label">5 proveedores · 1 factura</div>
+              <div style="font-size:0.78rem;opacity:0.7;margin-top:2px;">Llega hoy entre 10:00 – 11:00 am</div>
+            </div>
+            <div class="hero-summary__value">$287.40</div>
+          </div>
+          <p style="font-size:0.78rem;color:rgba(255,255,255,0.45);text-align:center;margin-top:14px;">
+            📍 Sector: Cotocollao, Quito
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== PROBLEMA ===================== -->
+  <section class="section section--light" aria-labelledby="problema-heading">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px">
+        <span class="section-label">El problema que resolvemos</span>
+        <h2 class="section-title" id="problema-heading">
+          Administrar una tienda es más difícil de lo que parece
+        </h2>
+        <p class="section-subtitle">
+          Cada semana, el tendero de Quito enfrenta los mismos cuellos de botella
+          que drenan su tiempo y reducen sus ganancias.
+        </p>
+      </div>
+
+      <div class="problem-grid" role="list">
+
+        <article class="problem-card" role="listitem">
+          <div class="problem-icon" aria-hidden="true">😩</div>
+          <h3 class="problem-title">5 a 10 camiones distintos por semana</h3>
+          <p class="problem-desc">
+            Cada proveedor llega a su hora, interrumpe tus ventas y te obliga a revisar
+            y firmar facturas separadas. Son horas perdidas cada semana.
+          </p>
+        </article>
+
+        <article class="problem-card" role="listitem">
+          <div class="problem-icon" aria-hidden="true">📋</div>
+          <h3 class="problem-title">Múltiples facturas y pagos fragmentados</h3>
+          <p class="problem-desc">
+            Llevar la contabilidad de 8 proveedores distintos, cada uno con sus
+            condiciones de crédito, es un caos que genera errores y retrasos.
+          </p>
+        </article>
+
+        <article class="problem-card" role="listitem">
+          <div class="problem-icon" aria-hidden="true">📉</div>
+          <h3 class="problem-title">Sin poder de negociación individual</h3>
+          <p class="problem-desc">
+            Un local pequeño no tiene volumen para exigir descuentos. Los grandes
+            distribuidores priorizan a las cadenas de supermercados.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CÓMO FUNCIONA ===================== -->
+  <section class="section" aria-labelledby="como-funciona-heading">
+    <div class="container">
+      <div style="margin-bottom:48px">
+        <span class="section-label">Cómo funciona OneDeal</span>
+        <h2 class="section-title" id="como-funciona-heading">
+          Tan simple como enviar un mensaje por WhatsApp
+        </h2>
+        <p class="section-subtitle">
+          Diseñado específicamente para dueños de tiendas que prefieren la practicidad
+          a la tecnología complicada.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">1</div>
+          <div>
+            <h3 class="step-content-title">Armas tu carrito multimarca</h3>
+            <p class="step-content-desc">
+              Accede al catálogo desde tu celular sin descargar ninguna app.
+              Elige productos de Nestlé, Unilever y 40+ marcas más en una sola pantalla.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">2</div>
+          <div>
+            <h3 class="step-content-title">Confirmamos tu pedido</h3>
+            <p class="step-content-desc">
+              Recibes un SMS con la ventana de entrega exacta. Sin esperas de todo el día:
+              una franja de 1 hora para que puedas planificar.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">3</div>
+          <div>
+            <h3 class="step-content-title">Un furgón, todo el pedido</h3>
+            <p class="step-content-desc">
+              Un solo vehículo trae todos tus productos consolidados desde nuestro
+              centro de acopio en Quito. Sin interrupciones, sin desorden.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">4</div>
+          <div>
+            <h3 class="step-content-title">Una sola factura electrónica</h3>
+            <p class="step-content-desc">
+              Pagas todo en un solo movimiento: efectivo, transferencia o Deuna.
+              Recibe tu RIDE electrónico al instante para tu contabilidad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TESTIMONIAL ===================== -->
+  <section class="section section--light" aria-labelledby="testimonio-heading">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:40px">
+        <span class="section-label">Lo que dicen nuestros comercios aliados</span>
+        <h2 class="section-title" id="testimonio-heading">Tenderos reales, resultados reales</h2>
+      </div>
+      <div class="testimonial">
+        <p class="testimonial__text">
+          Antes me pasaba toda la mañana del lunes recibiendo camiones. Ahora armo
+          mi pedido el sábado por la noche desde el celular y el martes a las 10
+          ya tengo todo. Mis ganancias mejoraron porque no dejo de atender clientes.
+        </p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar" aria-hidden="true">C</div>
+          <div>
+            <div class="testimonial__name">Carlos M.</div>
+            <div class="testimonial__role">Propietario de Tienda "La Confianza" — Cotocollao, Quito</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COBERTURAS ===================== -->
+  <section class="section section--dark" aria-labelledby="cobertura-heading">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px">
+        <span class="section-label">Cobertura</span>
+        <h2 class="section-title" id="cobertura-heading">
+          Operamos en los sectores de mayor densidad de Quito
+        </h2>
+        <p class="section-subtitle">
+          Actualmente atendemos tiendas en estas parroquias. Expandiéndonos cada mes.
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🏘️</div>
+          <h3 class="feature-title">Cotocollao</h3>
+          <p class="feature-desc">Norte de Quito. Alta densidad de tiendas de barrio y micromercados familiares.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🏙️</div>
+          <h3 class="feature-title">Chillogallo</h3>
+          <p class="feature-desc">Sur de Quito. Uno de los sectores con mayor concentración de tiendas tradicionales.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🏛️</div>
+          <h3 class="feature-title">Centro Histórico</h3>
+          <p class="feature-desc">El corazón comercial de Quito, con cafeterías, tiendas y micromercados de toda la vida.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:32px">
+        <p style="font-size:0.9rem;color:rgba(255,255,255,0.50);margin-bottom:16px">
+          ¿No estás en estas zonas? Escríbenos, estamos expandiéndonos rápidamente.
+        </p>
+        <a href="https://wa.me/593999999999?text=Quiero+saber+si+OneDeal+llega+a+mi+sector" target="_blank" rel="noopener" class="btn btn--white">
+          Consultar cobertura en mi barrio
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="text-center" style="margin-bottom:48px">
+        <span class="section-label">Preguntas frecuentes</span>
+        <h2 class="section-title" id="faq-heading">Sabemos que tienes dudas</h2>
+      </div>
+      <div style="max-width:680px;margin:0 auto">
+
+        <div class="accordion-item open">
+          <button class="accordion-btn" aria-expanded="true">
+            ¿Necesito descargar una aplicación?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>No. Nuestro catálogo funciona directamente en el navegador de tu celular. Accedes con un código SMS (OTP) — sin contraseñas, sin apps que ocupen espacio.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            ¿Cuáles son las formas de pago aceptadas?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>Aceptamos efectivo al momento de la entrega, transferencias bancarias, y billeteras digitales como Deuna y De Una. También ofrecemos línea de crédito de 7 días para comercios aliados.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            ¿Qué pasa si el camión se retrasa?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>Recibirás una notificación proactiva si hay algún cambio en tu ventana de entrega. Nuestro compromiso es cumplir la franja de 1 hora que confirmamos. En caso de falla, tienes contacto directo con el coordinador de zona por WhatsApp.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-btn" aria-expanded="false">
+            ¿Cuántas veces por semana puedo pedir?
+            <span class="accordion-icon" aria-hidden="true">+</span>
+          </button>
+          <div class="accordion-body">
+            <p>Puedes realizar pedidos de 2 a 3 veces por semana, dependiendo de tu zona. Nuestro sistema también puede sugerirte pedidos automáticos basados en el historial de ventas de tu local.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="cta-section" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 class="cta-title" id="cta-heading">
+        ¿Listo para recuperar tu tiempo<br/>y mejorar tus márgenes?
+      </h2>
+      <p class="cta-subtitle">
+        Un promotor de OneDeal puede visitar tu tienda esta semana y ayudarte
+        a armar tu primer pedido de manera gratuita.
+      </p>
+      <div class="cta-buttons">
+        <a href="catalogo.html" class="btn btn--primary btn--lg">
+          Ver el catálogo de productos →
+        </a>
+        <a href="https://wa.me/593999999999?text=Quiero+que+un+promotor+visite+mi+tienda" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Solicitar visita gratuita
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo" aria-label="OneDeal inicio">
+            <div class="logo-mark" aria-hidden="true">1D</div>
+            <span class="logo-text" style="color:#fff">One<span>Deal</span></span>
+          </a>
+          <p class="footer__tagline">
+            Plataforma B2B de micro-abastecimiento urbano para tiendas de barrio en Quito.
+            Un solo pedido, múltiples proveedores, una sola entrega.
+          </p>
+        </div>
+
+        <div>
+          <p class="footer__heading">Embudo de ventas</p>
+          <nav class="footer__links" aria-label="Etapas del embudo">
+            <a href="index.html">Descubrimiento</a>
+            <a href="catalogo.html">Exploración</a>
+            <a href="pedido.html">Conversión</a>
+            <a href="aliados.html">Lealtad</a>
+          </nav>
+        </div>
+
+        <div>
+          <p class="footer__heading">Empresa</p>
+          <nav class="footer__links">
+            <a href="#como-funciona-heading">Cómo funciona</a>
+            <a href="#cobertura-heading">Cobertura</a>
+            <a href="aliados.html#beneficios">Beneficios</a>
+            <a href="#faq-heading">Preguntas frecuentes</a>
+          </nav>
+        </div>
+
+        <div class="footer__contact">
+          <p class="footer__heading">Contacto</p>
+          <p>📍 Quito, Ecuador</p>
+          <p>💬 WhatsApp: +593 99 999 9999</p>
+          <p>✉️ hola@onedeal.ec</p>
+          <p style="margin-top:12px">
+            <a href="https://wa.me/593999999999" target="_blank" rel="noopener" class="btn btn--whatsapp" style="padding:10px 18px;font-size:0.88rem">
+              Escríbenos ahora
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2025 OneDeal. Todos los derechos reservados.</span>
+        <span>Hecho con ❤️ para el tendero de Quito</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

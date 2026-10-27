@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO: Pedido/Conversión — Cluster: Abastecimiento + Gestión Micronegocios -->
+  <title>Tu Pedido OneDeal | Sistema de Pedidos para Tiendas — Entrega en 1 Hora exacta</title>
+  <meta name="description" content="Realiza tu pedido consolidado en OneDeal. Tracking GPS en vivo, ventana de entrega de 1 hora y una sola factura electrónica. Paga con efectivo, transferencia o Deuna. Abastece tu tienda en Quito hoy." />
+  <meta name="keywords" content="sistema de pedidos para tiendas Ecuador, abastecimiento tienda barrio Quito, pedido mayorista online minimarket, tracking entrega abarrotes, factura electrónica distribuidor Quito" />
+
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://onedeal-quito.github.io/pedido.html" />
+  <meta property="og:title"       content="Tu Pedido OneDeal | Tracking en Tiempo Real" />
+  <meta property="og:description" content="Un pedido, todos tus proveedores. Tracking GPS en vivo. Entrega en ventana de 1 hora. Una sola factura electrónica." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Tu Pedido — OneDeal",
+    "description": "Página de confirmación y seguimiento de pedidos B2B de abarrotes para tiendas en Quito.",
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio",   "item": "https://onedeal-quito.github.io/" },
+        { "@type": "ListItem", "position": 2, "name": "Catálogo", "item": "https://onedeal-quito.github.io/catalogo.html" },
+        { "@type": "ListItem", "position": 3, "name": "Tu Pedido","item": "https://onedeal-quito.github.io/pedido.html" }
+      ]
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23F97316'/><text x='50%' y='56%' dominant-baseline='middle' text-anchor='middle' fill='white' font-size='18' font-weight='900'>1D</text></svg>" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" aria-label="Navegación principal">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo" aria-label="OneDeal inicio">
+          <div class="logo-mark" aria-hidden="true">1D</div>
+          <span class="logo-text">One<span>Deal</span></span>
+        </a>
+        <div class="navbar__links">
+          <a href="index.html">Inicio</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="pedido.html" class="active">Tu Pedido</a>
+          <a href="aliados.html">Programa Aliados</a>
+        </div>
+        <button class="navbar__hamburger" id="hamburgerBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="navbar__mobile" id="mobileMenu" role="navigation">
+      <a href="index.html">🏠 Inicio</a>
+      <a href="catalogo.html">🛒 Catálogo</a>
+      <a href="pedido.html" class="active">📦 Tu Pedido</a>
+      <a href="aliados.html">⭐ Programa Aliados</a>
+      <a href="https://wa.me/593999999999" target="_blank" rel="noopener" style="color:#25D366">💬 WhatsApp</a>
+    </div>
+  </nav>
+
+  <!-- ===================== FUNNEL BANNER ===================== -->
+  <div class="funnel-banner" aria-label="Etapa actual: Tu Pedido" role="navigation">
+    <div class="funnel-banner__inner container">
+      <div class="funnel-banner__step done">
+        <a href="index.html"></a><span class="step-num">✓</span> Descubrimiento
+      </div>
+      <div class="funnel-banner__step done">
+        <a href="catalogo.html"></a><span class="step-num">✓</span> Exploración
+      </div>
+      <div class="funnel-banner__step active">
+        <a href="pedido.html"></a><span class="step-num">3</span> Tu Pedido
+      </div>
+      <div class="funnel-banner__step">
+        <a href="aliados.html"></a><span class="step-num">4</span> Lealtad
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <header class="page-header" id="pedido-top">
+    <div class="container">
+      <div class="page-header__eyebrow">
+        📦 Etapa 3 — Conversión y Primera Entrega
+      </div>
+      <h1 class="page-header__title">
+        Tu pedido está en camino.<br/>Sabemos exactamente a qué hora llega.
+      </h1>
+      <p class="page-header__desc">
+        Nada de esperar todo el día. Recibes una ventana de entrega de
+        <strong>1 hora exacta</strong> y seguimiento GPS en vivo hasta que el furgón
+        llegue a tu puerta.
+      </p>
+    </div>
+  </header>
+
+  <!-- ===================== TRACKING DEMO ===================== -->
+  <section class="section section--light" aria-labelledby="tracking-heading">
+    <div class="container">
+      <div style="margin-bottom:40px;text-align:center">
+        <span class="section-label">Seguimiento en tiempo real</span>
+        <h2 class="section-title" id="tracking-heading">Cero ansiedad operativa</h2>
+        <p class="section-subtitle" style="margin:0 auto">
+          Sabes en todo momento dónde está tu pedido. Sin llamadas, sin incertidumbre.
+        </p>
+      </div>
+
+      <div style="max-width:440px;margin:0 auto">
+        <div class="tracking-card" role="status" aria-live="polite" aria-label="Estado del pedido #2847">
+          <div class="tracking-header">
+            <div class="tracking-title">Estado de tu pedido</div>
+            <div class="tracking-order">Pedido #2847</div>
+            <div class="tracking-time">🕙 Llegada estimada: hoy 10:20 – 11:20 am</div>
+          </div>
+          <div class="tracking-body">
+            <ol class="tracking-steps" aria-label="Pasos del proceso de entrega">
+
+              <li class="tracking-step">
+                <span class="tracking-step-dot done" aria-label="Completado">✓</span>
+                <div class="tracking-step-info">
+                  <div class="tracking-step-label done">Pedido recibido</div>
+                  <div class="tracking-step-desc">Sáb 25 oct · 09:47 pm — Tu carrito fue confirmado</div>
+                </div>
+              </li>
+
+              <li class="tracking-step">
+                <span class="tracking-step-dot done" aria-label="Completado">✓</span>
+                <div class="tracking-step-info">
+                  <div class="tracking-step-label done">En preparación</div>
+                  <div class="tracking-step-desc">Dom 26 oct · 06:30 am — Centro de acopio Quito Norte</div>
+                </div>
+              </li>
+
+              <li class="tracking-step">
+                <span class="tracking-step-dot active" aria-label="En proceso">🚛</span>
+                <div class="tracking-step-info">
+                  <div class="tracking-step-label active">En ruta — a 4 paradas de ti</div>
+                  <div class="tracking-step-desc">Dom 26 oct · 09:55 am — Cotocollao, Av. La Prensa</div>
+                </div>
+              </li>
+
+              <li class="tracking-step">
+                <span class="tracking-step-dot" aria-label="Pendiente">📍</span>
+                <div class="tracking-step-info">
+                  <div class="tracking-step-label">Entrega en tu local</div>
+                  <div class="tracking-step-desc">Estimado: entre las 10:20 y 11:20 am</div>
+                </div>
+              </li>
+
+            </ol>
+
+            <!-- Alerta SMS -->
+            <div style="background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.25);border-radius:var(--radius);padding:12px 14px;display:flex;gap:10px;align-items:flex-start;margin-top:20px">
+              <span style="font-size:1.2rem" aria-hidden="true">📲</span>
+              <div>
+                <div style="font-size:0.82rem;font-weight:700;color:var(--primary)">SMS recibido hace 5 min</div>
+                <div style="font-size:0.82rem;color:var(--text-muted)">
+                  "OneDeal: Tu furgón está a 4 paradas. Llegará entre 10:20–11:20 am. Cualquier novedad: wa.me/593999999999"
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROCESO DETALLADO ===================== -->
+  <section class="section" aria-labelledby="proceso-heading">
+    <div class="container">
+      <div style="margin-bottom:48px">
+        <span class="section-label">El proceso de tu pedido</span>
+        <h2 class="section-title" id="proceso-heading">
+          De tu catálogo a tu estante en menos de 24 horas
+        </h2>
+        <p class="section-subtitle">
+          Desde que armas el carrito hasta que recibes la mercancía, así funciona la magia.
+        </p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">1</div>
+          <div>
+            <h3 class="step-content-title">🛒 Armas el carrito multimarca</h3>
+            <p class="step-content-desc">
+              Seleccionas productos de distintas marcas en una sola sesión.
+              Mínimo de compra: $50 para el primer pedido.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">2</div>
+          <div>
+            <h3 class="step-content-title">📩 Recibes confirmación por SMS</h3>
+            <p class="step-content-desc">
+              Al confirmar el pedido, recibes de inmediato tu número de pedido y
+              la ventana de entrega asignada para el siguiente día hábil.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">3</div>
+          <div>
+            <h3 class="step-content-title">🏭 Consolidación en el centro de acopio</h3>
+            <p class="step-content-desc">
+              Nuestro equipo recoge los productos de cada proveedor y los consolida
+              en un solo pallet etiquetado con tu nombre y pedido.
+            </p>
+          </div>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num" aria-hidden="true">4</div>
+          <div>
+            <h3 class="step-content-title">🚛 Un solo furgón llega a tu tienda</h3>
+            <p class="step-content-desc">
+              El conductor verifica tu identidad, descarga todo el pedido y te entrega
+              la factura electrónica (RIDE) en papel y por correo/WhatsApp.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FORMAS DE PAGO ===================== -->
+  <section class="section section--light" aria-labelledby="pago-heading">
+    <div class="container">
+      <div style="display:grid;gap:48px" class="hero__inner">
+        <div>
+          <span class="section-label">Formas de pago</span>
+          <h2 class="section-title" id="pago-heading">
+            Pagas como siempre lo has hecho
+          </h2>
+          <p class="section-subtitle" style="margin-bottom:28px">
+            Sin tarjetas de crédito obligatorias, sin plataformas complicadas. Aceptamos
+            los métodos que ya usas en tu día a día.
+          </p>
+
+          <div class="payment-methods" role="list" aria-label="Métodos de pago aceptados">
+            <div class="payment-method" role="listitem">
+              <span class="pm-icon" aria-hidden="true">💵</span>
+              <span>Efectivo al recibir</span>
+            </div>
+            <div class="payment-method" role="listitem">
+              <span class="pm-icon" aria-hidden="true">🏦</span>
+              <span>Transferencia bancaria</span>
+            </div>
+            <div class="payment-method" role="listitem">
+              <span class="pm-icon" aria-hidden="true">📱</span>
+              <span>Deuna (billetera digital)</span>
+            </div>
+            <div class="payment-method" role="listitem">
+              <span class="pm-icon" aria-hidden="true">⏱️</span>
+              <span>Crédito 7 días (aliados)</span>
+            </div>
+          </div>
+
+          <div style="margin-top:24px;background:rgba(34,197,94,0.08);border:1px solid rgba(34,197,94,0.25);border-radius:var(--radius);padding:14px 16px;display:flex;gap:10px;align-items:center">
+            <span style="font-size:1.2rem" aria-hidden="true">🧾</span>
+            <div style="font-size:0.88rem;color:var(--accent-dark);font-weight:600">
+              Factura electrónica RIDE incluida en cada entrega — lista para tu contabilidad.
+            </div>
+          </div>
+        </div>
+
+        <!-- Señales de confianza -->
+        <div>
+          <span class="section-label">¿Por qué confiar en OneDeal?</span>
+          <div class="trust-grid" role="list" style="margin-top:20px">
+            <div class="trust-item" role="listitem">
+              <div class="trust-icon" aria-hidden="true">⏱️</div>
+              <div>
+                <h3 class="trust-title">Ventana de 1 hora garantizada</h3>
+                <p class="trust-desc">Si llegamos fuera del horario comprometido, el siguiente pedido tiene 5% de descuento automático.</p>
+              </div>
+            </div>
+            <div class="trust-item" role="listitem">
+              <div class="trust-icon" aria-hidden="true">🔍</div>
+              <div>
+                <h3 class="trust-title">Verificación de productos</h3>
+                <p class="trust-desc">Cada pedido pasa por un control de calidad antes de salir del centro de acopio. Foto del pallet disponible.</p>
+              </div>
+            </div>
+            <div class="trust-item" role="listitem">
+              <div class="trust-icon" aria-hidden="true">🔄</div>
+              <div>
+                <h3 class="trust-title">Cambios sin complicaciones</h3>
+                <p class="trust-desc">Si algún producto llega en mal estado, lo reemplazamos en el siguiente pedido o hacemos devolución inmediata.</p>
+              </div>
+            </div>
+            <div class="trust-item" role="listitem">
+              <div class="trust-icon" aria-hidden="true">📊</div>
+              <div>
+                <h3 class="trust-title">Factura que te protege</h3>
+                <p class="trust-desc">Factura electrónica con todos los ítems desglosados. Perfecta para el SRI y tu contabilidad personal.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRIMERA COMPRA ===================== -->
+  <section class="section section--primary" aria-labelledby="primera-heading">
+    <div class="container text-center">
+      <span class="section-label">Oferta de bienvenida</span>
+      <h2 class="section-title" id="primera-heading">
+        Tu primera entrega con flete gratis
+      </h2>
+      <p class="section-subtitle" style="margin:0 auto 32px">
+        Para que compruebes sin riesgo que OneDeal funciona como prometemos.
+        Compra mínima de $50 en productos.
+      </p>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+        <a href="catalogo.html" class="btn btn--white btn--lg">← Volver al catálogo</a>
+        <a href="https://wa.me/593999999999?text=Quiero+hacer+mi+primer+pedido+en+OneDeal" target="_blank" rel="noopener" class="btn btn--whatsapp btn--lg">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Pedir mi primer pedido
+        </a>
+        <a href="aliados.html" class="btn btn--white btn--lg">Ver Programa Aliados →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="navbar__logo">
+            <div class="logo-mark" aria-hidden="true">1D</div>
+            <span class="logo-text" style="color:#fff">One<span>Deal</span></span>
+          </a>
+          <p class="footer__tagline">Plataforma B2B de micro-abastecimiento urbano para tiendas de barrio en Quito.</p>
+        </div>
+        <div>
+          <p class="footer__heading">Embudo de ventas</p>
+          <nav class="footer__links">
+            <a href="index.html">Descubrimiento</a>
+            <a href="catalogo.html">Exploración</a>
+            <a href="pedido.html">Conversión</a>
+            <a href="aliados.html">Lealtad</a>
+          </nav>
+        </div>
+        <div>
+          <p class="footer__heading">Empresa</p>
+          <nav class="footer__links">
+            <a href="index.html#como-funciona-heading">Cómo funciona</a>
+            <a href="index.html#cobertura-heading">Cobertura</a>
+            <a href="index.html#faq-heading">FAQ</a>
+          </nav>
+        </div>
+        <div class="footer__contact">
+          <p class="footer__heading">Contacto</p>
+          <p>📍 Quito, Ecuador</p>
+          <p>💬 +593 99 999 9999</p>
+          <p>✉️ hola@onedeal.ec</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2025 OneDeal. Todos los derechos reservados.</span>
+        <span>Hecho con ❤️ para el tendero de Quito</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
